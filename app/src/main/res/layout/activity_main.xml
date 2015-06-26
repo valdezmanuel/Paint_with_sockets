@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity"
+    android:id="@+id/canvasFrame">
+
+    <!-- Canvas -->
+    <view class="com.example.bodyvaldez.paint_with_sockets.CanvasView"
+        android:background="#fff"
+        android:id="@+id/canvasView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerInParent="true"/>
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:progress="1"
+        android:secondaryProgress="10"
+        android:layout_centerHorizontal="true"
+        android:max="10"/>
+</RelativeLayout>
